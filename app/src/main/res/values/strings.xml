@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Magic Ball</string>
+    <string name="title">Magic Ball</string>
+    <string name="title2">Ball</string>
+    <string name="subtitle">Ask a question and touch the ball</string>
+
+</resources>
+

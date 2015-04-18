@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@+drawable/background"
+    tools:context=".MagicBall" >
+
+    <ImageView
+        android:contentDescription="Ball"
+        android:src="@+drawable/ball"
+        android:id="@+id/ball"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.95"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/randStar2" />
+
+    <ImageView
+        android:contentDescription="Fog in the ball"
+        android:src="@+drawable/fog2"
+        android:id="@+id/fog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/randStar2"
+        android:fillEnabled="true"
+        android:fillAfter="true" />
+
+    <ImageView
+        android:contentDescription="random star 1"
+        android:src="@+drawable/randstar1"
+        android:id="@+id/randStar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fillEnabled="true"
+        android:fillAfter="true"
+        android:layout_above="@+id/ball"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:contentDescription="random star 2"
+        android:src="@+drawable/randstar1"
+        android:id="@+id/randStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fillEnabled="true"
+        android:fillAfter="true"
+        android:layout_below="@+id/subtitle"
+        android:layout_alignRight="@+id/randStar4"
+        android:layout_alignEnd="@+id/randStar4" />
+
+    <ImageView
+        android:contentDescription="random star 3"
+        android:src="@+drawable/randstar3"
+        android:id="@+id/randStar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fillEnabled="true"
+        android:fillAfter="true"
+        android:layout_toEndOf="@+id/randStar1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/randStar1"
+        android:layout_marginLeft="14dp" />
+
+    <ImageView
+        android:contentDescription="random star 4"
+        android:src="@+drawable/randstar4"
+        android:id="@+id/randStar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fillEnabled="true"
+        android:fillAfter="true"
+        android:layout_alignTop="@+id/title2"
+        android:layout_alignRight="@+id/stars"
+        android:layout_alignEnd="@+id/stars"
+        android:layout_marginRight="14dp" />
+
+    <ImageView
+        android:contentDescription="stars"
+        android:src="@+drawable/stars"
+        android:id="@+id/stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fillEnabled="true"
+        android:fillAfter="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/title2"
+        android:layout_alignStart="@+id/title2" />
+
+    <TextView
+        android:contentDescription="Title - Ball"
+        android:gravity="center"
+        android:id="@+id/title2"
+        android:text="@+string/title"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-thin"
+        android:layout_height="wrap_content"
+        android:textColor="@+color/white"
+        android:layout_marginTop="50dp"
+        android:textSize="59dp"
+        android:shadowColor="#000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="5"/>
+
+    <TextView
+        android:contentDescription="Subtitle"
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/subtitle"
+        android:textSize="17.5dp"
+        android:textColor="@color/white"
+        android:text="@+string/subtitle"
+        android:layout_below="@+id/title2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:shadowColor="#000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:contentDescription="Advice text"
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/advice"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/transparentGrey"
+        android:text=""
+        android:shadowColor="#000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="1"
+        android:alpha="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Style for Kitkat and up -->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!-- Translucent action bar -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>
