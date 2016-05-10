@@ -1,5 +1,6 @@
 package com.nicolaifoldager.magicball;
 
+
 //Import libraries
 import android.app.Activity;
 import android.os.Bundle;
